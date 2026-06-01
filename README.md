@@ -166,9 +166,9 @@ fct_trial_activation  ← Mart layer: trial_activated flag and activated_at (966
 **fct_trial_activation Schema**
 
 | Column	          | Description
-| ------------------| --------------------------------------- |
-| organization_id	  |  Unique org identifier                  |
-| trial_activated	1 | if all 3 goals met, else 0              |
+| ------------------  | --------------------------------------- |
+| organization_id	    |  Unique org identifier                  |
+| trial_activated	1   | if all 3 goals met, else 0              |
 | activated_at	    | trial_end if activated, NULL otherwise  |
 
 ----
@@ -183,13 +183,12 @@ This task runs structured descriptive analyses across six areas: conversion rate
 
 The overall conversion rate was 21.3%, consistent with the 1-in-5 figure stated in the brief. Breaking this down by trial cohort revealed an important trend. The January cohort converted at 23.0% and February at 22.8%, both comfortably above average. The March cohort dropped to 18.2%, a decline of nearly 5 percentage points in a single month. This cohort-level drop is the clearest early warning signal in the dataset and warrants immediate investigation.
 
-| Cohort	       | Organisations	  | Conversion Rate    |
-| ---------------| ---------------- |------------------- |
-| January  2024  | 	305	            | 23.0%              |
-| February 2024  | 	347	            | 22.8%              |
-| March    2024  | 	314	            | 18.2%              |
-| ---------------| ---------------- |------------------- |
-| Overall        |	966	            | 21.3%              |
+| Cohort	     | Organisations	  | Conversion Rate    |
+| ---------------| ----------------   |------------------- |
+| January  2024  | 	305	        | 23.0%              |
+| February 2024  | 	347	        | 22.8%              |
+| March    2024  | 	314	        | 18.2%              |
+| Overall        |	966	        | 21.3%              |
 
 **Time to Convert**
 
@@ -199,12 +198,12 @@ Of the 206 organisations that converted, the analysis measured how many days ela
 
 The funnel analysis shows exactly where organisations drop off on the path to Trial Activation.
 
-| Stage                           | Organisations	  | % of Total	| Drop-off        |
-| --------------------------------| ----------------|-------------|---------------- |
-| Started Trial	                  | 966	            | 100.0%	    | --              |
-| Goal 1 Met (3+ shifts)          | 563	            | 58.3%	      | -403 (41.7%)    |
-| Goal 2 Met (template applied)	  | 108	            | 11.2%       | 	-455 (80.8%)  |
-| Goal 3 Met (punched in)	        | 211	            | 21.8%      	| -352 (62.5%)    |
+| Stage                               | Organisations	  | % of Total  | Drop-off            |
+| --------------------------------    | ----------------|-------------|----------------     |
+| Started Trial	                    | 966	        | 100.0%	    | --                  |
+| Goal 1 Met (3+ shifts)              | 563	        | 58.3%	    | -403 (41.7%)        |
+| Goal 2 Met (template applied)	  | 108	        | 11.2%       | 	-455 (80.8%)  |
+| Goal 3 Met (punched in)	        | 211	        | 21.8%       | -352 (62.5%)        |
 | Trial Activated (all 3)	        | 56              | 5.8%        | 	--            |
 
 The most striking number here is the drop between Goal 1 and Goal 2. Of the 563 organisations that created 3 or more shifts, only 108 ever applied a shift template, an 80.8% drop-off between two features that live in the same module. This is the single biggest opportunity in the entire activation funnel.
